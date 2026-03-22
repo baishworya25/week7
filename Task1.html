@@ -1,105 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Task 1</title>
-</head>
+<html>
+<head><title>Exercise 2</title></head>
 <body>
-    <form action="submit"
-        method="post"
-        enctype="multipart/form-data"
-        autocomplete="on"
-        name="completeform"
+<table border="1" cellpadding="20" cellspacing="0">
+  <tr><td>
+    <strong>HTML Form Test</strong><br><br>
+    <form>
+      <table border="0" cellpadding="5">
+        <tr>
+          <td width="100">Name</td>
+          <td><input type="text" name="n" size="30"></td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td><input type="text" name="a" size="30"></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="text" name="e" size="30"></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" name="g"> Male 
+            <input type="radio" name="g"> Female
+          </td>
+        </tr>
+        <tr>
+          <td>Hobbies</td>
+          <td>
+            <input type="checkbox"> Sports 
+            <input type="checkbox"> Movies 
+            <input type="checkbox"> Travelling
+          </td>
+        </tr>
+        <tr>
+          <td>Country</td>
+          <td>
+            <select style="width:100%"><option>Nepal</option></select>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Message</td>
+          <td><textarea rows="10" cols="40"></textarea></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Submit"> 
+            <input type="reset" value="Reset">
+          </td>
+        </tr>
+      </table>
     </form>
-    <fieldset> 
-        <label for="Date">Date</label>
-        <input type="Date" name="Date">
-        <br><br>
-        <label for="Time:">Time</label>
-        <input type="Time" name="Time">
-        <br><br>
-        <label for="Website">Website</label>
-        <input type="Website" name="Website">
-    </fieldset>
-    <fieldset>
-        <legend>Personal Information</legend>
-        <label for="name"> Full name:</label>
-        <input type="text" id="name" name="name" placeholder="enter your name" required>
-        <br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" minlength="6">
-        <br><br>
-        <label for="phone no:">Phone no:</label>
-        <input type="phone no" id="phone no" name="phone no">
-        <br><br>
-        <label for="Mail:">Mail:</label>
-        <input type="mail" id="mail" name="mail">
-        <br><br>
-        <label for="Age">Age:</label>
-        <input type="age" id="age" name="age">
-        <br><br>
-    </fieldset>
-    <fieldset>
-        <legend> Selections </legend>
-         <p>Gender:</p>
-        <input type="radio" name="gender" value="male" id="male">
-        <label for="male">male</label>
-        <input type="radio" name="gender" value="female" id="female">
-        <label for="female">female</label>
-        <br><br>
-        <label>Skills:</label>
-        <input type="checkbox" name="skills" value="HTML">HTML
-        <input type="checkbox" name="skills" value="CSS">CSS
-        <input type="checkbox" name="skills" value="java script">Java script
-        <br><br>
-        <label>Country:</label>
-        <select name="Country:">
-            <optgroup label="asia">
-                <option value="np">Nepal</option>
-                <option value="in">India</option>
-            </optgroup>
-            <optgroup label="europe">
-                <option value="de">Germany</option>
-                <option value="fr">France</option>
-            </optgroup>
-        </select>
-        <select name="Cities:">
-            <optgroup label="Nepal">
-                <option>Pokhara</option>
-                <option>Kathmandu</option>
-                <option>Chitwan</option>
-            </optgroup>
-        </select>
-
-    </fieldset>
-    <fieldset>
-        <legend>Message:</legend>
-        <label for="message">Your message</label><br>
-        <textarea> </textarea>
-        <br><br>
-        <legend>File upload:</legend>
-        <label>Upload resume</label>
-        <input type="file" name="resume" accept="pdf.doc">
-        <br><br>
-        <label>Upload pictures</label>
-        <input type="file" name="images" accept="pdf.doc">
-        <br><br>
-    </fieldset>
-    <fieldset>
-        <legend>Other inputs</legend>
-        <label>Color Picture</label>
-        <input type="color" name="color">
-        <br><br>
-        <label>Range</label>
-        <input type="range" name="range" min="0" max="100">
-        <br><br>
-        <label>Search</label>
-        <input type="search" name="search">
-        <br><br>
-    </fieldset>
-    <fielset>
-         <button type="Submit">Submit form</button>
-         <button type="Reset">Reset</button>
-    </fielset>
-
+  </td></tr>
+</table>
 </body>
 </html>
